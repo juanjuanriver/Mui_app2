@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Document</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<link href="../css/mui.min.css" rel="stylesheet"/>
+<link rel="stylesheet" href="../css/swiper.min.css" />
+<script src="../js/mui.min.js"></script>
+<style>
+     html{ 
+     	overflow-x: hidden; 
+     	overflow-y: auto; 
+     	}
+	li{
+		list-style: none;
+	}
+	.mui-bar-nav{
+		background: #fff;
+		box-shadow: none;
+		border-bottom: 1px solid #efefef;
+	}
+	.mui-icon{
+		color: #848484;
+	}
+	#hua{
+		margin-top: 0;
+		padding-top: 5px;
+	}
+	.huadesc{
+		background: #fff;
+		padding-top: 15px;
+	}
+	.huadesc>p{
+		width: 90%;
+		margin: 0 auto;
+		line-height: 1.5em;
+		font-size: 0.8em;
+	}
+	#arrowhua{
+		width: 90%;
+		margin-left: 50%;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	#mulumore{
+		background: #fff;
+		text-align: center;
+		color: #bebebe;
+		padding-bottom:15px;
+	}
+	#mulumore>a{
+		color: #bebebe;
+	}
+    .swiper-container {
+        width: 100%;
+        background: #fff;
+    	 margin-bottom:50px;
+    }
+    .swiper-wrapper{
+    	 width: 95%;
+    	 text-align: center;
+    	 margin: 0 auto;
+    	 padding-bottom: 60px;
+    }
+    .swiper-slide>img{
+    	display: block;
+    	width: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    /*底部选项卡修改颜色*/
+    .mui-segmented-control .mui-control-item.mui-active{
+	         color: #fff;
+	         background: #FEB500; 
+	         border-right: 1px solid #FEB500; 
+	 }
+	 .mui-segmented-control .mui-control-item{
+	        color: #FEB500;  
+	 }
+	 .swiper-pagination  .swiper-pagination-bullet-active{
+	 	opacity: 1;
+        background: #FEB500;  
+	 }
+	</style>
+</head> 
+<body>
+	<header class="mui-bar mui-bar-nav">
+	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+	    <h1 class="mui-title" style="color: #FEB500;">详情</h1>
+	    <a class="mui-icon mui-icon-download  mui-pull-right"></a>
+	    <a class="mui-icon mui-icon-star mui-pull-right" style="margin-right:15px;"></a>
+	</header>
+	<div class="mui-content">
+	    <!--1.图书信息开始-->
+	    <ul class="mui-table-view" id="hua">
+	        <li class="mui-table-view-cell mui-media">
+	            <a href="javascript:;">
+	                <img class="mui-media-object mui-pull-left" src="../img/hua.jpg" style="max-width: 140px;height: 140px;">
+	                <div class="mui-media-body" style="padding-top: 10px;padding-left: 10px;line-height: 1.3em;font-size: 1.3em;">
+	                                            朝花夕拾
+	                    <p class="mui-ellipsis" style="color: #FEB500;font-size: 0.8em;">鲁迅</p>
+	                    <p class="mui-ellipsis">已有1380个人读过<br>来自江苏凤凰科技出版社有限公司</p>
+	                </div>
+	            </a>
+	        </li>
+	    </ul>
+	    <div class="huadesc">
+	    	<p>《朝花夕拾》原名《旧事重提》，是现代文学家鲁迅的散文集，收录鲁迅于1926年创作的10篇回忆性散文，《朝花夕拾》里作者鲁迅用夹叙夹议的方法，</p>
+	    	<p style="display: none;" id="huadesc_on">以青少年时代的生活经历为线索，真实生动地叙写了自己从农村到城镇，从家庭到社会，从国内到国外的一组生活经历，抒发了对往昔亲友和师长的怀念之情，同时也对旧势力、旧文化进行了嘲讽和抨击。</p>
+	        <div id="arrowhua">
+	    	   <a class="mui-icon mui-icon-arrowdown" style="text-align: center;"></a>
+	        </div>
+	    </div>
+	    <!--1.图书信息结束-->
+	    <!--2.书籍目录开始-->
+	    <div class="mui-row" style="background: #fff;margin-top: 15px;">
+	        <div class="mui-col-sm-6 mui-col-xs-12">
+	            <li class="mui-table-view-cell">
+	                <a style="font-size: 1.3em;padding-top: 15px;">
+	                                         书籍目录   
+	                </a>
+	            </li>
+	        </div>
+	        <div class="mui-col-sm-6 mui-col-xs-12">
+	            <li class="mui-table-view-cell">
+	                <a style="color: #bebebe;">
+	                          一&nbsp;&nbsp;&nbsp;野草
+	                </a>
+	            </li>
+	        </div>
+	        <div class="mui-col-sm-6 mui-col-xs-12">
+	            <li class="mui-table-view-cell">
+	                <a style="color: #bebebe;">
+	                          一&nbsp;&nbsp;&nbsp;题词[1]
+	                </a>
+	            </li>
+	        </div>
+	        <div class="mui-col-sm-6 mui-col-xs-12">
+	            <li class="mui-table-view-cell">
+	                <a style="color: #bebebe;">
+	                          一&nbsp;&nbsp;&nbsp;秋夜[1]
+	                </a>
+	            </li>
+	        </div>
+	        <div class="mui-col-sm-6 mui-col-xs-12">
+	            <li class="mui-table-view-cell">
+	                <a style="color: #bebebe;">
+	                          一&nbsp;&nbsp;&nbsp;影的告别[1]
+	                </a>
+	            </li>
+	        </div>
+	    </div>
+	     <div class="mui-row" style="background: #fff;display: none;" id="mulu_on">
+
+	        <div class="mui-col-sm-6 mui-col-xs-12">
+	            <li class="mui-table-view-cell">
+	                <a style="color: #bebebe;">
+	                          &nbsp;&nbsp;&nbsp;野草
+	                </a>
+	            </li>
+	        </div>
+	        <div class="mui-col-sm-6 mui-col-xs-12">
+	            <li class="mui-table-view-cell">
+	                <a style="color: #bebebe;">
+	                          &nbsp;&nbsp;&nbsp;题词[1]
+	                </a>
+	            </li>
+	        </div>
+	        <div class="mui-col-sm-6 mui-col-xs-12">
+	            <li class="mui-table-view-cell">
+	                <a style="color: #bebebe;">
+	                          &nbsp;&nbsp;&nbsp;秋夜[1]
+	                </a>
+	            </li>
+	        </div>
+	        <div class="mui-col-sm-6 mui-col-xs-12">
+	            <li class="mui-table-view-cell">
+	                <a style="color: #bebebe;">
+	                          &nbsp;&nbsp;&nbsp;影的告别[1]
+	                </a>
+	            </li>
+	        </div>
+	    </div>
+        <div id="mulumore">
+    	   <a>查看更多目录</a>
+        </div>
+	    <!--2.书记目录结束-->
+	    <!--3.评论开始-->
+	     <div class="mui-row" style="background: #fff;margin-top: 15px;">
+	        <div class="mui-col-sm-6 mui-col-xs-12">
+	            <li class="mui-table-view-cell">
+	                <a class="mui-pull-left" style="font-size: 1.3em;padding-top: 15px;">
+	                                         评论
+	                </a>
+	                 <a class="mui-pull-right" style="color: #FEB500;">
+	                    写书评                   
+	                </a>
+	            </li>
+	        </div>
+	    </div>
+	    <ul class="mui-table-view">
+	        <li class="mui-table-view-cell mui-media">
+	            <a href="javascript:;">
+	                <img class="mui-media-object mui-pull-left" src="../img/pin1.jpg" style="max-width: 100px;height: 90px;">
+	                 <div class="mui-media-body" style="padding-top: 10px;">
+	                                          神秘小七<img src="../img/pin11.jpg" style="width:25%;">
+	                    <p class="mui-ellipsis">2018-7-27</p>
+	                    <p class="mui-ellipsis" style="color: #323232;">非常棒果然是先生的书</p>
+	                </div>
+	            </a>
+	        </li>
+	        <li class="mui-table-view-cell mui-media">
+	            <a href="javascript:;">
+	                <img class="mui-media-object mui-pull-left" src="../img/pin2.jpg" style="max-width: 100px;height: 90px;">
+	                 <div class="mui-media-body" style="padding-top: 10px;">
+	                                          神秘小七<img src="../img/pin22.jpg" style="width:25%;">
+	                    <p class="mui-ellipsis">2018-7-27</p>
+	                    <p class="mui-ellipsis" style="color: #323232;">《朝花夕拾》不是经验性的记事，也不是纯想象性的描写，重在写感触</p>
+	                </div>
+	            </a>
+	        </li>
+	         <li class="mui-table-view-cell mui-media">
+	            <a href="javascript:;">
+	                <img class="mui-media-object mui-pull-left" src="../img/pin3.jpg" style="max-width: 100px;height: 90px;">
+	                 <div class="mui-media-body" style="padding-top: 10px;">
+	                                          神秘小七<img src="../img/pin11.jpg" style="width:25%;">
+	                    <p class="mui-ellipsis">2018-7-27</p>
+	                    <p class="mui-ellipsis" style="color: #323232;">30年代，李长之先生说《朝花夕拾》“名为散文其实依然不过是在回忆中掺杂抒情成份的杂感”</p>
+	                </div>
+	            </a>
+	        </li>
+	         <li class="mui-table-view-cell mui-media">
+	            <a href="javascript:;">
+	                <img class="mui-media-object mui-pull-left" src="../img/pin4.jpg" style="max-width: 100px;height: 90px;">
+	                 <div class="mui-media-body" style="padding-top: 10px;">
+	                                          神秘小七<img src="../img/pin22.jpg" style="width:25%;">
+	                    <p class="mui-ellipsis">2018-7-27</p>
+	                    <p class="mui-ellipsis" style="color: #323232;">我们不能不说《朝花夕拾》的十篇散文都是这种杂感，但其中的两篇确实是事实上的杂感体，即《狗·猫·鼠》与《二十四孝图》。</p>
+	                </div>
+	            </a>
+	        </li>
+	    </ul>
+	    <ul class="mui-table-view" id="pinlun_on" style="display: none;">
+	        <li class="mui-table-view-cell mui-media">
+	            <a href="javascript:;">
+	                <img class="mui-media-object mui-pull-left" src="../img/pin1.jpg" style="max-width: 100px;height: 90px;">
+	                 <div class="mui-media-body" style="padding-top: 10px;">
+	                                          神秘小七<img src="../img/pin11.jpg" style="width:25%;">
+	                    <p class="mui-ellipsis">2018-7-27</p>
+	                    <p class="mui-ellipsis" style="color: #323232;">非常棒果然是先生的书</p>
+	                </div>
+	            </a>
+	        </li>
+	        <li class="mui-table-view-cell mui-media">
+	            <a href="javascript:;">
+	                <img class="mui-media-object mui-pull-left" src="../img/pin2.jpg" style="max-width: 100px;height: 90px;">
+	                 <div class="mui-media-body" style="padding-top: 10px;">
+	                                          神秘小七<img src="../img/pin22.jpg" style="width:25%;">
+	                    <p class="mui-ellipsis">2018-7-27</p>
+	                    <p class="mui-ellipsis" style="color: #323232;">《朝花夕拾》不是经验性的记事，也不是纯想象性的描写，重在写感触</p>
+	                </div>
+	            </a>
+	        </li>
+	         <li class="mui-table-view-cell mui-media">
+	            <a href="javascript:;">
+	                <img class="mui-media-object mui-pull-left" src="../img/pin3.jpg" style="max-width: 100px;height: 90px;">
+	                 <div class="mui-media-body" style="padding-top: 10px;">
+	                                          神秘小七<img src="../img/pin11.jpg" style="width:25%;">
+	                    <p class="mui-ellipsis">2018-7-27</p>
+	                    <p class="mui-ellipsis" style="color: #323232;">30年代，李长之先生说《朝花夕拾》“名为散文其实依然不过是在回忆中掺杂抒情成份的杂感”</p>
+	                </div>
+	            </a>
+	        </li>
+	         <li class="mui-table-view-cell mui-media">
+	            <a href="javascript:;">
+	                <img class="mui-media-object mui-pull-left" src="../img/pin4.jpg" style="max-width: 100px;height: 90px;">
+	                 <div class="mui-media-body" style="padding-top: 10px;">
+	                                          神秘小七<img src="../img/pin22.jpg" style="width:25%;">
+	                    <p class="mui-ellipsis">2018-7-27</p>
+	                    <p class="mui-ellipsis" style="color: #323232;">我们不能不说《朝花夕拾》的十篇散文都是这种杂感，但其中的两篇确实是事实上的杂感体，即《狗·猫·鼠》与《二十四孝图》。</p>
+	                </div>
+	            </a>
+	        </li>
+	    </ul>
+	     <div style="background: #fff;text-align: center;" id="pinlunmore">
+    	   <a style="color: #323232;line-height: 3em;">全部评论(19)</a>
+        </div>
+	    <!--3.评论开始-->
+	    <!--4.为你推荐开始-->
+	    <div class="mui-row" style="background: #fff;margin-top: 15px;">
+	        <div class="mui-col-sm-6 mui-col-xs-12">
+	            <li class="mui-table-view-cell">
+	                <a class="mui-pull-left" style="font-size: 1.3em;padding-top: 15px;">
+	                                       为你推荐
+	                </a>
+	            </li>
+	        </div>
+	    </div>
+	      <!-- Swiper -->
+		  <div class="swiper-container">
+		    <div class="swiper-wrapper">
+		    	
+		      <div class="swiper-slide">
+		      	<img src="../img/info2.jpg" >	
+		      </div>
+		      <div class="swiper-slide">
+		      	<img src="../img/info3.jpg">
+		      </div>
+		      <div class="swiper-slide">
+		      	<img src="../img/infor1.jpg">
+		      </div>
+		      <div class="swiper-slide">
+		      	<img src="../img/info2.jpg">
+		      </div>
+		      <div class="swiper-slide">
+		      	<img src="../img/info3.jpg">
+		      </div>
+		      <div class="swiper-slide">
+		      	<img src="../img/infor1.jpg">
+		      </div>
+		    </div>
+		    <!-- Add Pagination -->
+		    <div class="swiper-pagination"></div>
+		  </div>
+	    <!--4.为你推荐结束-->  
+	</div>
+	<!--5.底部选项卡-->
+	<div style="background: #fff;position: fixed;bottom: 0;">
+		<div id="segmentedControl" class="mui-segmented-control" style="border: 0;">
+			<a class="mui-control-item mui-active" style="font-size: 1.5em;">
+				试读
+			</a>
+			<a class="mui-control-item" style="font-size: 1.5em;border-left: 1px solid #FEB500;">
+				购买
+			</a>
+			<a class="mui-control-item" style="font-size: 1.5em;border-left: 1px solid #FEB500;">
+				借阅
+			</a>
+	     </div>
+	</div>
+	<!--5.底部选项卡结束-->
+    <script type="text/javascript" src="../js/swiper.min.js" ></script>
+	<script type="text/javascript" src="../js/jquery-1.11.1.min.js" ></script>
+	<script>
+	    //书介绍
+		$("#arrowhua>a").click(function(){
+			$("#huadesc_on").toggle();
+		})
+		//目录
+		$("#mulumore>a").click(function(){
+			$("#mulu_on").toggle();
+		})
+		//评论
+		$("#pinlunmore>a").click(function(){
+			$("#pinlun_on").toggle();
+		})
+		//推荐
+		 var swiper = new Swiper('.swiper-container', {
+	      slidesPerView: 3,
+	      spaceBetween: 20,
+	      pagination: {
+	        el: '.swiper-pagination',
+	        clickable: true,
+	      },
+	    });
+	    
+	</script>
+</body>
+</html>

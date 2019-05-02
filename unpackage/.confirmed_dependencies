@@ -10,7 +10,8 @@
 			"html/shouye.html",
 			"html/mine.html",
 			"html/konjian.html",
-			"html/jilu.html"
+			"html/jilu.html",
+			"html/fenlie.html"
 		]
 	},
 	"html/shouye.html": {
@@ -58,7 +59,8 @@
 			"js/Jump.js"
 		],
 		"refer": [
-			"html/login.html"
+			"html/login.html",
+			"html/jilurecord.html"
 		]
 	},
 	"html/mine.html": {
@@ -100,6 +102,62 @@
 			"js/mui.min.js",
 			"css/mui.min.css",
 			"fonts/mui.ttf"
+		]
+	},
+	"html/jilurecord.html": {
+		"resources": [
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"img/record1.jpg",
+			"img/record3.jpg",
+			"img/record2.jpg",
+			"img/record4.jpg",
+			"img/record6.jpg",
+			"img/record5.jpg",
+			"js/Jump.js"
+		]
+	},
+	"html/konjian.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"fonts/mui.ttf"
+		]
+	},
+	"html/fenliedetail.html": {
+		"resources": [
+			"img/hua.jpg",
+			"js/jquery-1.11.1.min.js",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"img/pin1.jpg",
+			"img/pin11.jpg",
+			"img/pin2.jpg",
+			"img/pin4.jpg",
+			"img/pin3.jpg",
+			"img/pin22.jpg",
+			"js/swiper.min.js",
+			"css/swiper.min.css",
+			"img/info2.jpg",
+			"img/info3.jpg",
+			"img/infor1.jpg"
+		]
+	},
+	"html/fenlie.html": {
+		"resources": [
+			"img/fen4.jpg",
+			"img/fen1.jpg",
+			"img/fen3.jpg",
+			"img/fen5.jpg",
+			"img/fen7.jpg",
+			"img/fen8.jpg",
+			"img/fen6.jpg",
+			"img/fen2.jpg"
+		],
+		"refer": [
+			"html/fenliedetail.html"
 		]
 	}
 }
