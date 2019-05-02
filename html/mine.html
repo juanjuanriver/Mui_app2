@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	 <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link href="../css/mui.min.css" rel="stylesheet"/>
+	<script src="../js/mui.min.js"></script>
+	<style>
+	   *{
+			color: #323232;
+		}
+		li{
+			list-style: none;
+		}
+		#minetlt{
+			border-bottom: 1px solid #d6d6d6;
+		}
+		#minetlt a{
+			text-align: center;
+		}
+		div.shows{
+			display: block;
+		}
+		.hidden{
+			display: none;
+		}
+		.mui-switch{
+			background-color: #f8b200;
+		}
+		#jieshukadesc{
+			width: 90%;	
+		}
+		#jieshukadesc ul{
+			display: flex;
+			justify-content: space-between;
+		}
+		#jieshukabtn1{
+			color: #fff;
+			line-height: 2em;
+			margin: 20px 10px;
+			width: 95%;
+			border-radius: 25px;
+			background: #bb52e2;
+			border:none;
+		}
+		#jieshukabtn2{
+			color: #fff;
+			line-height: 2em;
+			margin: 2px 10px;
+			width: 95%;
+			border-radius: 25px;
+			background: #fa6e6c;
+			border:none;
+		}
+		#minetlt a{
+			color: gray;
+		}
+		#minetlt a.active{
+			color: #FEB500;
+			border-bottom: 1px solid #FEB500;
+		}
+	</style>
+	
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav" style="background: #ffd32f; box-shadow: none;">
+	    <a class="mui-icon mui-icon-gear mui-pull-right" style="color: #fff;"></a>
+	</header>
+	<div class="mui-content">
+	    <div><img src="../img/mine.jpg" style="width: 100%;"></div>
+		<!--选项卡开始-->
+	    <div class="mui-row" id="minetlt">
+	        <div class="mui-col-sm-6 mui-col-xs-6">
+	            <li class="mui-table-view-cell">
+	                <a class="active">
+	                                            我的信息
+	                </a>
+	            </li>
+	        </div>
+	        <div class="mui-col-sm-6 mui-col-xs-6">
+	            <li class="mui-table-view-cell">
+	                <a>
+	                                         我的借书卡
+	                </a>
+	            </li>
+	        </div>
+	    </div>
+	    <div class="tap" id="divBox">
+					<div style="display: block;">
+						<!--1-->
+						<div class="mui-row" style="border-bottom:  1px solid #d6d6d6;">
+						    <div class="mui-col-sm-6 mui-col-xs-6">
+					            <li class="mui-table-view-cell">
+					                <a>
+					                                     昵称
+					                </a>
+					            </li>
+					        </div>
+					        <div class="mui-col-sm-6 mui-col-xs-6">
+					            <li class="mui-table-view-cell">
+					                <a class="mui-navigate-right" style="text-align: center;">
+					                                          提子
+					                </a>
+					            </li>
+					        </div>
+						</div>
+						<!--1-->
+						<!--2-->
+						<ul class="mui-table-view" style="background: #f0f0f3;">
+						        <li class="mui-table-view-cell">
+						            <a class="mui-navigate-right">
+						                修改密码
+						            </a>
+						        </li>
+						        <!--<li class="mui-table-view-cell">-->
+						            <div class="mui-row" style="border-bottom:  1px solid #d6d6d6;">
+									    <div class="mui-col-sm-6 mui-col-xs-6">
+								            <li class="mui-table-view-cell">
+								                <a>
+								                                           我的电话
+								                </a>
+								            </li>
+								        </div>
+								        <div class="mui-col-sm-6 mui-col-xs-6">
+								            <li class="mui-table-view-cell">
+								                <a class="mui-navigate-right" style="text-align: center;">
+								                    15255846354
+								                </a>
+								            </li>
+								        </div>
+									</div>
+						        <!--</li>-->
+						        <li class="mui-table-view-cell">
+						            <a class="mui-navigate-right">
+						                 我的地址
+						            </a>
+						        </li>
+						        <li class="mui-table-view-cell" style="margin-top: 40px;border-top:  1px solid #d6d6d6;">
+						            <a class="mui-navigate-right">
+						                 消息推送
+						            </a>
+						            <div class="mui-switch mui-switch-mini mui-switch-blue mui-active" >
+									  <div class="mui-switch-handle"></div>
+									</div>
+							    </li>
+						    </ul>
+						<!--2-->
+					</div>
+					<div style="display: none;">
+						<div style="width: 95%;margin-top: 20px;">
+							<img src="../img/jieshuka.jpg" style="width: 98%;margin-left: 4%;">
+						</div>
+						<div id="jieshukadesc">
+							<ul>
+								<li style="color: #323232;">借书证号：</li>
+								<li style="color: #a1a1a1;">1607050540014</li>
+							</ul>
+							<ul>
+								<li style="color: #323232;">获得积分：</li>
+								<li style="color: #a1a1a1;">5分</li>
+							</ul>
+						</div>
+					
+					   <button type="button"  data-loading-icon="mui-spinner mui-spinner-custom" class="mui-btn mui-btn-royal a" htmlName="minema.html" id="jieshukabtn1">扫码入馆</button> 
+					   <button type="button" class="mui-btn mui-btn-royal" id="jieshukabtn2">删除此卡</button> 
+					</div>
+				</div>
+        <!--选项卡结束-->	
+	</div>
+	<script src="../js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="../js/Jump.js" ></script>
+	<script type="text/javascript">
+	 //tabcolor
+	   $("#minetlt>div>li>a").click(function(){
+	   	$(this).addClass("active").parent().parent().siblings().find("a").removeClass("active");
+	   })
+	    //tab切换
+		var btns = document.getElementById('minetlt');
+		var btnss = btns.children;
+		var cont = document.getElementById("divBox");
+		var conts = cont.children;
+		for(var i=0;i<btnss.length;i++){	 		
+			btnss[i].addEventListener("tap",function () {
+					 	for(var j=0;j<btnss.length;j++){
+ 					if(this==btnss[j]){
+				conts[j].style.display = "block";  
+//					btnss[i].style.background="#ffd32f";
+
+ 		}else{
+ 			conts[j].style.display = "none";
+ 		}
+ 	}
+			})
+		}
+		//扫码入馆loading	
+        mui(document.body).on('tap', '.mui-btn', function(e) {
+	    mui(this).button('loading');
+	    setTimeout(function() {
+	        mui(this).button('reset');
+	    }.bind(this), 2000);
+	});
+	  
+	
+	
+	</script>
+</body>
+</html>

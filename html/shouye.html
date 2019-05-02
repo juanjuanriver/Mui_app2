@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <link href="../css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../css/iconfont.css" />
+	<script src="../js/mui.min.js"></script>
+	<style>
+		#ling,#ma{
+			font-size: 1.5em;
+			line-height: 2em;
+			color: #feb500;
+		}
+		#ling+input{
+			background: #feb500;
+			line-height: 1em;
+			border-radius: 10px;
+			color: #fff;
+			margin:10px;
+			margin-left: 3%;
+			padding: 8px;
+			border:none;
+		}
+		.mask{
+			 height: 40px;
+			 line-height: 40px;
+			 font-size: 1.3em;
+			 color: #fff;
+		     background:rgba(0, 0, 0 ,0.5)
+		}
+		#bookicons{
+			width: 100%;
+			margin: 0 auto;
+		}
+		#bookicons>ul{
+			display: flex;
+			margin-right: 10px;
+			margin: 0 auto;
+			border-bottom: 1px solid #e9e9e9;
+			padding-top: 15px;
+		}
+		#bookicons>ul>li{
+			flex: 1;
+			width: 20%;
+			list-style: none;
+			/*margin-left: 15px;*/
+		}
+		#bookicons>ul>li>img{
+			display: block;
+			width: 98%;
+		}
+		#bookicons>ul>li>p{
+			padding-top: 10px;
+		}
+	</style>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+	    <a class="iconfont icon-ling mui-pull-left " id="ling"></a>
+	    <input  value="搜索图书...">
+	    <a class="iconfont icon-erweima-copy mui-pull-right" id="ma"></a>
+	</header>
+	<div class="mui-content" style="margin-top: 12px;">
+			<div id="slider" class="mui-slider">
+				<div class="mui-slider-group mui-slider-loop">
+					<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<a href="#">
+							<img src="../img/book4.jpg">
+							<p class="mui-slider-title mask">静静看这世界</p>
+						</a>
+					</div>
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="../img/book1.jpg">
+							<p class="mui-slider-title mask">用读书装点人生</p>
+						</a>
+					</div>
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="../img/book2.jpg">
+							<p class="mui-slider-title mask">想要一间这样的木屋，静静的看书</p>
+						</a>
+					</div>
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="../img/book1.jpg">
+							<p class="mui-slider-title mask">(热门电子书推荐)回家路上陪你读书</p>
+						</a>
+					</div>
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="../img/book2.jpg">
+							<p class="mui-slider-title mask">用书香渲染生命</p>
+						</a>
+					</div>
+					<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<a href="#">
+							<img src="../img/book1.jpg">
+							<p class="mui-slider-title mask">幸福就是可以一起看书</p>
+						</a>
+					</div>
+				</div>
+				<div class="mui-slider-indicator mui-text-right">
+					<div class="mui-indicator mui-active"></div>
+					<div class="mui-indicator"></div>
+					<div class="mui-indicator"></div>
+					<div class="mui-indicator"></div>
+				</div>
+			</div>
+	        <div id="bookicons">
+	         	<ul>
+	         		<li>
+	         			<img src="../img/index1.jpg" />
+	         			<p>图书推购</p>
+	         		</li>
+	         		<li>
+	         			<img src="../img/index2.jpg" />
+	         			<p>好书推荐</p>
+	         		</li>
+	         		<li>
+	         			<img src="../img/index3.jpg" />
+	         			<p>先读为快</p>
+	         		</li>
+	         		<li>
+	         			<img src="../img/index4.jpg" />
+	         			<p>智能咨询</p>
+	         		</li>
+	         		<li>
+	         			<img src="../img/index5.jpg" />
+	         			<p>数字资源</p>
+	         		</li>
+	         	</ul>
+	         </div>
+	         
+	        <div  class="a" htmlName="syerweima.html" style="padding-bottom: 100px;"><img src="../img/erweima.jpg" style="width: 100%;"></div>
+	</div>
+	<script type="text/javascript" src="../js/Jump.js" ></script>
+	<script type="text/javascript" src="../js/comm.js" ></script>
+	<script>
+		var gallery = mui(".mui-slider");
+				gallery.slider({
+					interval: 2000
+				});
+		
+	</script>
+</body>
+
+</html>

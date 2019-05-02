@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link href="../css/mui.min.css" rel="stylesheet"/>
+	<script src="../js/mui.min.js"></script>
+	<style>
+		*{
+			color: #323232;
+			line-height: 2.4em;
+			font-size: 1em;
+		}
+		li{
+			list-style: none;
+		}
+		#woimg{
+			background: #F9F9F9;
+			text-align: center;
+		}
+		#woimg>img{
+			width: 30%;
+			padding-top: 20%;
+			padding-bottom: 40%;
+		}
+		#loginbtn{
+			margin-top: 10%;
+			width: 100%;
+			background: #FEB500;
+			line-height: 2em;
+			font-size: 1.1em;
+		}
+		.forget{
+			width: 90%;
+			text-align: center;
+			margin-top: 10%;
+		}
+		.forget>ul{
+			display: flex;
+		}
+		.forget>ul>li{
+			flex: 1;
+			color: #FEB500;
+		}
+	</style>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" style="color: #323232;"></a>
+	</header>
+	<div id="woimg">
+		<img src="../lingtu/bookwo.jpg">
+	</div>
+	
+	<div class="mui-content">
+	    <form class="mui-input-group">
+		    <div class="mui-input-row">
+		        <label>用户名</label>
+		    <input type="text" class="mui-input-clear" placeholder="请输入手机号">
+		    </div>
+		    <div class="mui-input-row">
+		        <label>密码</label>
+		        <input type="password" class="mui-input-password" placeholder="请输入密码">
+		    </div>
+		</form>
+		<button type="button" class="mui-btn mui-btn-warning" id="loginbtn">登录</button>
+		<div class="forget">
+			<ul>
+				<li>注册账号</li>
+				<li class="a" htmlName="loginforget.html">忘记密码</li>
+		    </ul>
+		</div>
+	</div>
+	<script type="text/javascript" src="../js/Jump.js" ></script>
+</body>
+</html>

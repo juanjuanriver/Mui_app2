@@ -1,0 +1,105 @@
+{
+	"index.html": {
+		"resources": [
+			"html/shouye.html",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.css"
+		],
+		"refer": [
+			"html/shouye.html",
+			"html/mine.html",
+			"html/konjian.html",
+			"html/jilu.html"
+		]
+	},
+	"html/shouye.html": {
+		"resources": [
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"css/iconfont.css",
+			"img/book1.jpg",
+			"img/book3.jpg",
+			"img/book2.jpg",
+			"img/book4.jpg",
+			"img/index1.jpg",
+			"img/index5.jpg",
+			"img/index3.jpg",
+			"img/index4.jpg",
+			"img/index2.jpg",
+			"img/erweima.jpg",
+			"js/Jump.js",
+			"js/scrolltext.js",
+			"js/comm.js"
+		],
+		"refer": [
+			"html/syerweima.html"
+		]
+	},
+	"html/syerweima.html": {
+		"resources": [
+			"fonts/mui.ttf",
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"js/comm.js"
+		]
+	},
+	"html/jilu.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"img/jilu1.jpg",
+			"img/jilu2.jpg",
+			"img/jilu6.jpg",
+			"img/jilu4.jpg",
+			"img/jilu3.jpg",
+			"img/jilu5.jpg",
+			"js/Jump.js"
+		],
+		"refer": [
+			"html/login.html"
+		]
+	},
+	"html/mine.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"fonts/mui.ttf",
+			"img/mine.jpg",
+			"img/jieshuka.jpg",
+			"js/Jump.js",
+			"js/jquery-1.11.1.min.js"
+		],
+		"refer": [
+			"html/minema.html"
+		]
+	},
+	"html/minema.html": {
+		"resources": [
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"img/shaoma.jpg"
+		]
+	},
+	"html/login.html": {
+		"resources": [
+			"lingtu/bookwo.jpg",
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"fonts/mui.ttf",
+			"js/Jump.js"
+		],
+		"refer": [
+			"html/loginforget.html"
+		]
+	},
+	"html/loginforget.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"fonts/mui.ttf"
+		]
+	}
+}
