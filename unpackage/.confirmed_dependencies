@@ -154,10 +154,22 @@
 			"img/fen7.jpg",
 			"img/fen8.jpg",
 			"img/fen6.jpg",
-			"img/fen2.jpg"
+			"img/fen2.jpg",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"js/Jump.js"
 		],
 		"refer": [
-			"html/fenliedetail.html"
+			"html/fenliedetail.html",
+			"html/fenliewenxue.html"
+		]
+	},
+	"html/fenliewenxue.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"fonts/mui.ttf"
 		]
 	}
 }
