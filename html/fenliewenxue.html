@@ -1,35 +1,57 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8" />
-	<title>Document</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-    <link href="../css/mui.min.css" rel="stylesheet"/>
-	<script src="../js/mui.min.js"></script>
-	<style>
-		li{
-			list-style: none;
-		}
-		.mui-bar-nav{
-			box-shadow: none;
-			border-bottom: 1px solid #efefef;
-			background: #fff;
-		}
-		#wentlt{
-			width: 85%;
-			margin: 0 auto;
-		}
-		#wentlt dl{
-			display: flex;
-			/*line-height: 2em;*/
-		}
-		#wentlt dl dt{
-			text-align: center;
-			width: 4.5em;
-			border-radius: 15px;
-			border:1px solid #000000;
-			padding: 8px 10px;
-		}
+<meta charset="UTF-8" />
+<title>Document</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<link href="../css/mui.min.css" rel="stylesheet"/>
+<script src="../js/mui.min.js"></script>
+<style>
+	*{
+		color: #555555;
+	}
+	li{
+		list-style: none;
+	}
+	.mui-bar-nav{
+		box-shadow: none;
+		border-bottom: 1px solid #efefef;
+		background: #fff;
+	}
+	#wentlt{
+		width: 85%;
+		margin: 0 auto;
+	}
+	#wentlt dl{
+		display: flex;
+	}
+	#wentlt dl dt{
+		text-align: center;
+		width: 4.5em;
+		border-radius: 15px;
+		padding: 8px 10px;
+		color: #FEB500;
+		background: #f6f6f6;
+	}
+	.mui-scroll-wrapper .mui-scroll .mui-control-item.mui-active{
+		color: #FEB500;
+	}
+	#all{
+	    font-size: 1.2em;
+		background: #f6f6f6;
+		border-radius: 15px;
+		border: none;
+	}
+	.mui-table-view:before{
+    height:0
+   }
+   .mui-table-view:after{
+    height:0
+   }
+  .mui-table-view-cell .mui-media-object{
+   	max-width: 130px;
+   	height: 130px;
+   }
 	</style>
 </head>
 <body>
@@ -44,6 +66,102 @@
 				<dd>宫格</dd>
 			</dl>
 		</div>
-	</div>    
+		<div id="wentlt">
+			<dl>
+				<dt>热门</dt>
+				<dd>最新</dd>
+				<dd>热评</dd>
+			</dl>
+		</div>
+		<!--全部滑动-->
+		<div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted" style="padding-left: 25px;">
+		    <div class="mui-scroll">
+		        <a id="all" class="mui-control-item mui-active">
+		           全部
+		        </a>
+		        <a class="mui-control-item">
+		            纪实文学
+		        </a>
+		        <a class="mui-control-item">
+		          文学理论
+		        </a>
+		        <a class="mui-control-item">
+		           中国古诗词
+		        </a>
+		        <a class="mui-control-item">
+		            文学大家
+		        </a>
+		        <a class="mui-control-item">
+		            诗经
+		        </a>
+		        <a class="mui-control-item">
+		           中国古诗词
+		        </a>
+		        <a class="mui-control-item">
+		            文学大家
+		        </a>
+		        <a class="mui-control-item">
+		            诗经
+		        </a>
+		    </div>
+		</div>
+		<!--全部滑动-->
+		<!--2.书籍内容开始-->
+		<ul class="mui-table-view">
+		    <li class="mui-table-view-cell mui-media">
+		        <a href="javascript:;">
+		            <img class="mui-media-object mui-pull-left" src="../img/wen1.jpg">
+		            <div class="mui-media-body" style="line-height: 2.5em;">
+		                皮囊
+		                 <p class="mui-ellipsis" style="color: #d0d8db;line-height: 1em;">蔡崇达</p>
+		                <p class="mui-ellipsis-2" style="-webkit-line-clamp: 3;line-height: 1.3em;padding-top: 10px;">
+		                	48篇美好的散文，时间沉淀之后，或许，80后出现了重要的作家--蔡崇达。他让韩寒为了促成结集邀约三年;他让刘德华三十年来初次亲笔..
+
+		                </p>
+		            </div>
+		        </a>
+		    </li>
+		    <li class="mui-table-view-cell mui-media">
+		        <a href="javascript:;">
+		            <img class="mui-media-object mui-pull-left" src="../img/wen4.jpg">
+		            <div class="mui-media-body a" htmlName="fenliedetail.html" style="line-height: 2.5em;">
+		                朝花夕拾
+		                 <p class="mui-ellipsis" style="color: #d0d8db;line-height: 1em;">鲁迅</p>
+		                <p class="mui-ellipsis-2" style="-webkit-line-clamp: 3;line-height: 1.3em;padding-top: 10px;">
+		                	《朝花夕拾》是鲁迅唯一-一 部回忆性散文集 ,包括十篇散文，较完整地记录了他从幼年到青年时期的生活经历和思想脉络，生动地描绘了一..
+		                </p>
+		            </div>
+		        </a>
+		    </li>
+		    <li class="mui-table-view-cell mui-media">
+		        <a href="javascript:;">
+		            <img class="mui-media-object mui-pull-left" src="../img/wen3.jpg">
+		            <div class="mui-media-body" style="line-height: 2.5em;">
+		                乖,摸摸头
+
+		                 <p class="mui-ellipsis" style="color: #d0d8db;line-height: 1em;">大冰</p>
+		                <p class="mui-ellipsis-2" style="-webkit-line-clamp: 3;line-height: 1.3em;padding-top: 10px;">
+		                	本书记录了大冰十余年的江湖游历，以及他和他朋友们的爱与温暖的传奇故事。这些故事与风花雪月无关，与鸡汤小清新无关，有的是无....
+
+		                </p>
+		            </div>
+		        </a>
+		    </li>
+		    <li class="mui-table-view-cell mui-media">
+		        <a href="javascript:;">
+		            <img class="mui-media-object mui-pull-left" src="../img/wen2.jpg">
+		            <div class="mui-media-body" style="line-height: 2.5em;">
+		                你是人间四月天
+		                 <p class="mui-ellipsis" style="color: #d0d8db;line-height: 1em;">林徽因</p>
+		                <p class="mui-ellipsis-2" style="-webkit-line-clamp: 3;line-height: 1.3em;padding-top: 10px;">
+		                	她生于杭州，微风细雨、轻烟长巷的江南水乡赋予了她与生俱来的诗意与典雅。人们爱谈论她那场康桥之恋，爱她清新隽永的诗文,感叹她...
+		                </p>
+		            </div>
+		        </a>
+		    </li>
+		</ul>
+		<!--2.书籍内容结束-->
+	</div> 
+	<script type="text/javascript" src="../js/Jump.js" ></script>
 </body>
 </html>
