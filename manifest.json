@@ -271,7 +271,8 @@
 					"js/jquery-1.11.1.min.js"
 				],
 				"refer": [
-					"html/minema.html"
+					"html/minema.html",
+					"html/mineshezhi.html"
 				],
 				"priority": 0
 			},
@@ -350,7 +351,8 @@
 					"css/swiper.min.css",
 					"img/info2.jpg",
 					"img/info3.jpg",
-					"img/infor1.jpg"
+					"img/infor1.jpg",
+					"html/shujia.html"
 				],
 				"refer": [],
 				"priority": 0
@@ -390,6 +392,70 @@
 				"refer": [
 					"html/fenliedetail.html"
 				],
+				"priority": 0
+			},
+			"html/mineshezhi.html": {
+				"resources": [
+					"js/mui.min.js",
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"js/Jump.js"
+				],
+				"refer": [
+					"html/mineshezhi/peoxinxi.html",
+					"html/mineshezhi/peoset.html"
+				],
+				"priority": 0
+			},
+			"html/mineshezhi/peoxinxi.html": {
+				"resources": [
+					"js/mui.min.js",
+					"js/Jump.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"img/pin4.jpg"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/mineshezhi/peoset.html": {
+				"resources": [
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"js/Jump.js"
+				],
+				"refer": [
+					"html/mineshezhi/gailogin.html",
+					"html/mineshezhi/changephone.html"
+				],
+				"priority": 0
+			},
+			"html/mineshezhi/gailogin.html": {
+				"resources": [
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/mineshezhi/changephone.html": {
+				"resources": [
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/shujia.html": {
+				"resources": [
+					"html/fenliedetail.html",
+					"js/shujia.js",
+					"css/shujia.css"
+				],
+				"refer": [],
 				"priority": 0
 			}
 		},

@@ -1,3 +1,7 @@
 <MKM version="2.0" imageFileUrl="file:///C:/Users/juanjuanhe/Desktop/app2/lingtu/fenlie1.jpg">
-  <Marks/>
+  <Marks>
+    <ColorMark x="98" y="139" color="16711680" offsetX="25" offsetY="10" defaultDirection="9" colorSystem="hex"/>
+    <ColorMark x="164" y="341" color="16711680" offsetX="25" offsetY="10" defaultDirection="9" colorSystem="hex"/>
+    <ColorMark x="168" y="299" color="16711680" offsetX="25" offsetY="10" defaultDirection="9" colorSystem="hex"/>
+  </Marks>
 </MKM>

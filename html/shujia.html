@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<link rel="stylesheet" href="../css/mui.min.css" />
+	<link rel="stylesheet" href="../css/shujia.css" />
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" style="color: #323232;"></a>
+	    <h1 class="mui-title" style="color: #FEB500;">整理书架</h1>
+	</header>
+	<div class="mui-content">
+			<!--商品列表-->
+			<ul class="mui-table-view">
+				<!--商品-->
+				<li class="mui-table-view-cell mui-left shop_li">
+					<div class="shop_li_left mui-checkbox">
+						<input name="checkbox" type="checkbox">
+					</div>
+					<div class="mui-media-body shop_li_in">
+						<img src="../img/info2.jpg" width="100px" />
+					</div>
+					<div class="mui-media-body shop_li_right">
+						<div class="p">鲁迅全集</div>
+						<div class="shop_li_right_div">
+							<span class="data-p" style="color: #FEB500;">已阅</span>
+						</div>
+					</div>
+					<span class="shop_li_delete mui-icon mui-icon-trash">
+						<!--删除图标-->
+					</span>
+				</li>
+				<!--商品-->
+				<!--商品-->
+				<li class="mui-table-view-cell mui-left shop_li">
+					<div class="shop_li_left mui-checkbox">
+						<input name="checkbox" type="checkbox">
+					</div>
+					<div class="mui-media-body shop_li_in">
+						<img src="../img/info3.jpg" width="100px" />
+					</div>
+					<div class="mui-media-body shop_li_right">
+						<div class="p">人山人海</div>
+						<div class="shop_li_right_div">
+							<span class="data-p" style="color: #FEB500;">已阅</span>
+						</div>
+					</div>
+					<span class="shop_li_delete mui-icon mui-icon-trash">
+						<!--删除图标-->
+					</span>
+				</li>
+				<!--商品-->
+				<!--商品-->
+				<li class="mui-table-view-cell mui-left shop_li">
+					<div class="shop_li_left mui-checkbox">
+						<input name="checkbox" type="checkbox">
+					</div>
+					<div class="mui-media-body shop_li_in">
+						<img src="../img/infor1.jpg" width="100px" />
+					</div>
+					<div class="mui-media-body shop_li_right">
+						<div class="p">你若安好便是晴天</div>
+						<div class="shop_li_right_div">
+							<span class="data-p" style="color: #FEB500;">已阅</span>
+						</div>
+					</div>
+					<span class="shop_li_delete mui-icon mui-icon-trash">
+						<!--删除图标-->
+					</span>
+				</li>
+				<!--商品-->
+			</ul>
+			<!--底部-->
+			<div class="shopCart">
+				<div class="left">
+					<div class="price">
+						<div class="mui-input-row mui-checkbox mui-left">
+							<label>全选</label>
+							<input id="checkAll" type="checkbox" style="top: 10px;">
+						</div>
+					</div>
+				</div>
+				<div class="right" id="deletes" style="background: #FEB500;">全部删除</div>
+			</div>
+			<!--底部-->
+		</div>
+		<script src="../js/jquery-1.11.1.min.js"></script>
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/shujia.js"></script>
+	</body>
+</html>

@@ -97,6 +97,24 @@
 	 	opacity: 1;
         background: #FEB500;  
 	 }
+	 /*mask*/
+	 .mui-popover{
+	 	width: 100%;
+	 	height: 60%;
+	 	background: #fff;
+	 }
+	 #masklist{
+	 	width: 93%;
+	 	text-align: center;
+	 }
+	  #masklist>ul{
+	   display: flex;
+	   justify-content: space-between;
+	   border-bottom: 1px solid #cfcfcf;
+	   line-height: 3.5em;
+	   margin: 0 auto;
+	   color: #ACACB4;
+	 }
 	</style>
 </head> 
 <body>
@@ -346,31 +364,70 @@
 			<a class="mui-control-item mui-active" style="font-size: 1.5em;">
 				试读
 			</a>
-			<a class="mui-control-item" style="font-size: 1.5em;border-left: 1px solid #FEB500;">
+			<a class="mui-control-item"  href="#topPopover" style="font-size: 1.5em;border-left: 1px solid #FEB500;">
 				购买
 			</a>
-			<a class="mui-control-item" style="font-size: 1.5em;border-left: 1px solid #FEB500;">
+			<a class="mui-control-item" id="jieshu" style="font-size: 1.5em;border-left: 1px solid #FEB500;">
 				借阅
 			</a>
 	     </div>
 	</div>
 	<!--5.底部选项卡结束-->
+	<!--6.购买蒙版开始-->
+	<div id="topPopover" class="mui-popover" >
+		<div class="mui-row" >
+	        <div class="mui-col-sm-6 mui-col-xs-12">
+	            <li class="mui-table-view-cell" style="border-bottom: 1px solid #cfcfcf;">
+	                <a class="mui-pull-left" style="font-size: 1.3em;padding-left: 40%;padding-top: 20px;">
+	                                     确认支付
+	                </a>
+	                <a class="mui-pull-right mui-icon mui-icon-closeempty" style="font-size: 2em;color: #CCCCCC;"></a>
+	            </li>
+	        </div>
+        </div>
+        <div id="masklist">
+        	<ul>
+        		<li>价格</li>
+        		<li>售价：￥22.5</li>
+        	</ul>
+        	<ul>
+        		<li>优惠券</li>
+        		<li>没有可用的优惠券</li>
+        	</ul>
+        	<ul>
+        		<li>折扣</li>
+        		<li style="color: #242424;">￥4.5</li>
+        	</ul>
+        	<ul>
+        		<li>支付方式</li>
+        		<li style="color: #242424;">微信<a class="mui-icon mui-icon-arrowright"></a></li>
+        	</ul>
+        	<ul style="border: none;">
+        		<li style="color: #424242;">实付￥18<i style="font-style: normal;color: #ACACB4;">（已优惠￥4.5）</i></li>
+        		<li style="background: #FEB500;color: #fff;padding: 0 13px;" href="#topPopover11">
+        			去支付
+        		</li>
+        	</ul>
+        </div>
+	</div>
+	<!--6.购买模板结束-->
+	
     <script type="text/javascript" src="../js/swiper.min.js" ></script>
 	<script type="text/javascript" src="../js/jquery-1.11.1.min.js" ></script>
 	<script>
-	    //书介绍
+	    //1.书介绍
 		$("#arrowhua>a").click(function(){
 			$("#huadesc_on").toggle();
 		})
-		//目录
+		//2.目录
 		$("#mulumore>a").click(function(){
 			$("#mulu_on").toggle();
 		})
-		//评论
+		//3.评论
 		$("#pinlunmore>a").click(function(){
 			$("#pinlun_on").toggle();
 		})
-		//推荐
+		//4.推荐
 		 var swiper = new Swiper('.swiper-container', {
 	      slidesPerView: 3,
 	      spaceBetween: 20,
@@ -378,8 +435,16 @@
 	        el: '.swiper-pagination',
 	        clickable: true,
 	      },
-	    });
-	    
+	   });
+         //借阅消息框
+		document.getElementById("jieshu").addEventListener('tap', function() {
+		    var btnArray = ['知道了', '前往书架'];//表示位置：[右下,左下]
+		    mui.confirm('你最多可借阅三本，暂不可借阅此书。若要借阅更多，请前往书架，归还部分电子书', '提示', btnArray, function(e) {
+		        if (e.index == 1) {
+		        	location.href="shujia.html"//点击消息框之后跳转的页面地址
+		        }
+		    })
+		});
 	</script>
 </body>
 </html>
